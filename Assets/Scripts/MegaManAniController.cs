@@ -11,6 +11,6 @@ public class MegaManAniController : MonoBehaviour
     }
     public void Move(InputAction.CallbackContext context)
     {
-        
+        move = context.ReadValue<Vector2>();
     }
 }

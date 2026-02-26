@@ -12,9 +12,10 @@ public class CubeSpinnerController : MonoBehaviour
     // Update is called once per frame
     public void ToggleSpin(InputAction.CallbackContext context)
     {
+        Debug.Log("isToggled");
         if (context.performed && (animator.GetBool(IsRotatingHash) == true)) 
         {
-            animator.SetBool(IsRotatingHash, true);
+            animator.SetBool(IsRotatingHash, false);
         }
         else if (context.performed && (animator.GetBool(IsRotatingHash) == false))
         {
