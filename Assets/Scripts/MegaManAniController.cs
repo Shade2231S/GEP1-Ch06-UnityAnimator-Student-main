@@ -13,8 +13,6 @@ public class MegaManAniController : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         move = context.ReadValue<Vector2>();
-        animator.SetFloat(MoveInputHashx, move.x);
-
-
+        animator.SetFloat(MoveInputHashx, move.x, 0f, Time.deltaTime);
     }
 }
